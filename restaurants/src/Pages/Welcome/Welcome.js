@@ -1,22 +1,26 @@
 import './Welcome.css'
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../Assets/Images/Ino/Ino_Normal.png'
 
 function Welcome() {
-    const navigate = useNavigate() // Usenavigate to redirect to the page
+  const navigate = useNavigate() // Usenavigate to redirect to the page
 
-    useEffect(() => {
-        setTimeout(() => {
-          navigate('/Home');
-        }, 3000)
-    }, [])
+  useEffect(() => {
+    setTimeout(() => {
+      navigate('/Home');
+    }, 4000)
+  }, [])
 
-    return (
+  return (
     <div className="App">
-      <div className="App-header">
-          <img className="logo" src={logo} alt={logo}/>
-        Welcome to Ino
+      <div className="Background-gradient">
+        <div className="App-header">
+          <img className="Logo" src={logo} alt={logo} />
+          <div className="Welcome-Text">
+            Welcome to Ino
+          </div>
+        </div>
       </div>
     </div>
   );

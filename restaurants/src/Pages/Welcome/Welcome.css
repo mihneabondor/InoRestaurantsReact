@@ -10,11 +10,32 @@
   justify-content: center;
   font-size: 5vh;
   font-weight: bold;
-  background: linear-gradient(180deg, rgba(255,255,255,1) 95%, rgb(62, 139, 204, 0.5) 100%);
 }
 
-.logo {
+.Background-gradient {
+  background: linear-gradient(180deg, rgba(255,255,255,1) 95%, rgb(62, 139, 204, 0.5) 100%);
+  min-height: 100vh;
+}
+
+.Logo {
   width: 10vh;
   height: 10vh;
   padding-bottom: 3vh;
+  animation: Logo-Animation ease 2s forwards;
+}
+
+.Welcome-Text {
+  opacity: 0;
+  animation: Logo-Animation ease 2s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes Logo-Animation {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
 }

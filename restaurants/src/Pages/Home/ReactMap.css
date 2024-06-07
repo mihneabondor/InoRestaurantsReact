@@ -1,0 +1,6 @@
+.map-container {
+    width: 70vw;
+    height: 25vh;
+    border-radius: 20px;
+    outline: dashed;
+}
